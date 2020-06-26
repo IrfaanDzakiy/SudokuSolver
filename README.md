@@ -40,12 +40,6 @@ Anda adalah Mr. Khun, saat ini Anda tergabung bersama tim Sweet & Sour untuk men
 ## Pengumpulan
 Lakukan merge request hasil fork Anda ke repository ini, informasi selanjutnya mengenai demo akan diberitahukan oleh asisten.
 
-
-pip install pytesseract
-
-https://github.com/UB-Mannheim/tesseract/wiki
-
-
 ## Pembuat
 Name : M. Irfaan Dzakiy
 <br/>
