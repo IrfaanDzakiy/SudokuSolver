@@ -37,6 +37,9 @@ while (playing):
     
     content += showArr(arr) + '\n'
     
+    content += "Koordinat area bernomor 5 : \n"
+    content += printFiveCoordinates(arr)
+
     print(content)
 
     print("Solusi akan disimpan kedalam file solution_" + fileName.split('.')[0] + ".txt")

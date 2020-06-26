@@ -1,4 +1,5 @@
 import os, fnmatch
+from SudokuSolver import *
 
 def showArr(arr):
     res = "= = = = = = = = = = = = = = = = = = =\n"   
@@ -38,4 +39,12 @@ def printTestList(inp):
     
 def printHeader():
     print("SELAMAT DATANG DI BAMBANG SUDOKU SOLVER\n")
+
+def printFiveCoordinates(arr):
+    res = ''
+    for i in range(9):
+        for j in range(9):
+            if (arr[i][j] == 5):
+                res += "(" + str(i+1) + ", " + str(j+1) + ")\n"
+    return res
 

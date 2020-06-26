@@ -44,3 +44,37 @@ Lakukan merge request hasil fork Anda ke repository ini, informasi selanjutnya m
 pip install pytesseract
 
 https://github.com/UB-Mannheim/tesseract/wiki
+
+
+## Pembuat
+Name : M. Irfaan Dzakiy
+<br/>
+NIM : 13518145
+
+## Cara Penggunaan Program
+0. Pastikan sudah menginstall library PIL, pytesseract dan pastikan tesseract terinstall pada komputer anda. Installer tesseract bisa diunduh disini https://github.com/UB-Mannheim/tesseract/wiki. Jangan lupa untuk menambahkan tesseract ke PATH komputer anda.
+
+```
+pip install PIL
+pip install pytesseract
+```
+
+1. Pergi ke directory src, lalu run dengan command
+
+```
+py Main.py
+```
+
+## Strategi Pencarian Solusi
+Setelah saya melakukan riset dengan bantuan mbah gugel, saya menemukan beberapa pendekatan untuk memecahkan problem sudoku, yaitu Backtracking, Stochastic Search, Constraint Programming, dan Exact Cover. Saya memutuskan untuk menggunakan pendekatan Backtracking karena algoritma tersebut sudah pernah diajarkan sebelumnya pada matakuliah Strategi Algoritma, sehingga saya merasa percaya diri untuk membuat implementasi program dengan menggunakan pendekatan tersebut. Untuk kompleksitas dari algoritma adalah O(n³).
+
+## Bonus
+Untuk mengerjakan bonus, yaitu bisa menerima input file sudoku berupa gambar, saya menggunakan library tesseract. Alasannya adalah library ini sangat memudahkan saya dalam memproses karakter-karakter yang ada pada suatu gambar, pada kasus ini adalah gambar sudoku, menjadi sebuah string yang lebih mudah untuk diproses lebih lanjut. Namun kekurangan dari library ini adalah diperlukannya pre-processing pada gambar agar bisa menghasilkan string yang merepresentasikan isi sudoku dengan benar. Salah satu kasus yang kerap saya temui adalah kotak yang menyimpan suatu angka pada sudoku kerap mengubah hasil yang diberikan oleh tesseract, walaupun garis tersebut hanya memiliki ketebalan 1 pixel. Proses trial n error yang harus dilakukan untuk mendapatkan hasil cropping yang sesuai sangatlah merepotkan.
+
+## Referensi
+https://en.wikipedia.org/wiki/Sudoku_solving_algorithms
+
+https://github.com/UB-Mannheim/tesseract/wiki
+
+https://www.geeksforgeeks.org/sudoku-backtracking-7/
+
